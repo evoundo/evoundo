@@ -1,0 +1,19 @@
+include LICENSE
+include *.md
+include pyproject.toml
+include setup.py
+
+recursive-include docs *
+
+recursive-include evoundo *
+recursive-include evoundo/studio/static *
+
+prune tests
+prune examples
+prune audit
+prune dist
+prune build
+prune .github
+
+global-exclude *.py[cod] __pycache__ *.so *.dylib .DS_Store
+
